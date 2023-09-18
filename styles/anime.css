@@ -1,25 +1,128 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #0c193d;
-  }
+  font-family: "Open Sans", sans-serif;
+  background-color: #0c193d;
+  color: #fff;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.back {
+  margin: 20px;
+}
 
 a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #152a64;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #152a64;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+.anime-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.anime-img img {
+  width: 400px;
+  height: 550px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 7px 9px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.anime-info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.anime-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.anime-info p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.anime-synopsis {
+  background-color: #152a64;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.anime-synopsis h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.anime-synopsis p {
+  font-size: 16px;
+}
+
+.anime-trailer {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+
+.watch-options {
+    margin-top: 10px;
+}
+
+.watch-button {
+    background-color: #007bff;
     color: #fff;
-    text-decoration: none;
     border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  a:hover {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.watch-button:hover {
     background-color: #0056b3;
-  }
-  
-  a:visited {
-    color: #ffffff;
-  }
-  
+}
+
+.watch-button.netflix {
+    background-color: #e50914;
+}
+
+.watch-button.crunchyroll {
+    background-color: #e17800;
+}
+
+.watch-button.funimation {
+    background-color: #22009c;
+}
